@@ -1,0 +1,72 @@
+
+1.print odd numbers
+a=[1,7,4,8,12,15,19,26,89]
+
+ans:
+res=a.filter((ele)=> ele%2!==0)
+console.log(res)
+
+2.convert string to cap
+
+a=[abc,Def,GHi]
+
+ans:
+res=a.map((k)=> k.toUpperCase())
+console.log(res)
+
+3.sum of all nos in array
+a=[1,7,4,8,12,15,19,26,89]
+
+ans:
+res=a.reduce((a,k)=> a+k ,0)
+console.log(res)
+
+4.print prime numbers
+a=[2,7,4,8,12,13,15,19,26,89]
+
+ans:
+res=a.filter((k)=>{
+    c=0
+    for(i=2;i<k;i++)
+        if(k%i===0)
+            c++
+    return c===0
+})
+console.log(res)
+
+5.print palindrome string
+a=["abc","kgffagk","madam","https","guvi","bbbqcqbbb"]
+
+ans:
+res=a.filter((k)=>{
+    c=0;l= ~~(k.length/2);
+    for(i=0;i<l;i++)
+        {
+        if(k[i]===k[k.length-1-i])
+            c++;
+        else
+            c--;
+        }
+    return c===l
+})
+console.log(res)
+
+6.return median of 2 sorted arrays
+
+7.remove duplicates
+
+ans:
+a=[1,2,2,3,3,3,4,4]
+
+res = a.filter((x, i, a) => a.indexOf(x) == i)
+console.log(res)
+
+8.rotate array n times
+a=[1,2,3,4,5]
+n=8
+
+ans:
+console.log(...a.slice(n%5,a.length),...a.slice(0,n%5))
+
+
+
