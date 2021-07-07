@@ -516,7 +516,7 @@ function filldata(ctr){
 
     for(j=0;j<5;j++){
         var ne=document.createElement("h5")
-        ne.innerText="id : "+ inidata[j].id+"   "+"name : "+ inidata[j].name
+        ne.innerText="id : "+ inidata[j].id
         document.getElementById(j).appendChild(ne)
         var ne=document.createElement("h5")
         ne.innerText +="name : "+ inidata[j].name
